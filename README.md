@@ -17,7 +17,11 @@
   `npm install webpack webpack-cli --save-dev`
 * 建立 src, dist 資料夾，src 放原始檔案， dist 放打包後的檔案
 * package.json 裡 "scripts" 裡加上 `"build": "webpack"`
-* 建立 Webpack 設定檔 `webpack.config.js`，建制細節看這包檔案，裡面 `mode: development` 和 `mode: production` 的差別是 production 為壓縮編碼後的檔案。
-   
-
+* 建立 Webpack 設定檔 `webpack.config.js`，建制細節看這包檔案，裡面 `mode: development` 和 `mode: production` 的差別是 production 為壓縮編碼後的檔案。  
+* 讓 webpack 支援載入 CSS 模組  
+`npm install style-loader css-loader --save-dev`    
+在 webpack.config.js 裡加入 module -> rules -> test css 設定
+* 讓 webpack 支援載入 SCSS 模組   
+`npm install sass-loader node-sass --save-dev`  
+在 webpack.config.js 裡加入 module -> rules -> test scss 設定  
   

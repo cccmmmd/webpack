@@ -9,3 +9,6 @@ let result = lib.add(4,5);
 console.log(result);
 result = lib.multiply(4,5);
 console.log(result);
+
+import "./style.css"
+import "./style.scss"
