@@ -1,3 +1,4 @@
+## Webpack  
 * 初始化專案，產生專案描述檔 package.json  
   `npm init -y`
 
@@ -23,5 +24,16 @@
 在 webpack.config.js 裡加入 module -> rules -> test css 設定
 * 讓 webpack 支援載入 SCSS 模組   
 `npm install sass-loader node-sass --save-dev`  
-在 webpack.config.js 裡加入 module -> rules -> test scss 設定  
+在 webpack.config.js 裡加入 module -> rules -> test scss 設定
+
+## 安裝 Webpack dev server
+* 安裝  
+  `npm install webpack-dev-server --save-dev`   
+* 在 webpack.config.js 加入 dev server 設定，在 output 後面加上   
+  `devServer:{ contentBase: "./dist" // 實際輸出程式的資料夾} `  
+* 在 package.json 的 scripte 裡加入   
+  `"start": "webpack-dev-server --open"`  
+
+之後只要 `npm run start ` 就會自動建置專案並自動打開瀏覽器，看到目前專案結果 
+
   
